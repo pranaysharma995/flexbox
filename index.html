@@ -23,17 +23,70 @@
             border: 1px solid #666;
             padding: 10px 10px;
         }
-        .box-1{
+       .container .box-1{
             flex: 1;
             order: 2;
         }
-        .box-2{
+       .container .box-2{
             flex: 1;
             order: 1;
         }
-        .box-3{
+       .container  .box-3{
             flex: 1;
             order: 3;
+        }
+        .container-2{
+            display: flex;
+            background-color: #f2f6f7;
+            margin: 2% 0%;
+            align-items: stretch;
+        }
+        .container-2 .box{
+            background-color: #999;
+            
+        }
+        .container-2 .one{
+            flex: 1;
+            order: 1;
+        }
+        .container-2 .two{
+            flex: 1;
+            order: 2;
+        }
+        .container-2 .three{
+            flex: 1;
+            order: 3;
+        }
+        .container-3,.container-4{
+            display: flex;
+            margin: 2% 0%;
+            background-color: #d3d3d3;
+        }
+        .container-3 .one{
+            flex: 1;
+            order: 2;
+        }
+        .container-3 .two{
+            flex: 1;
+            order: 1;
+        }
+        .container-3 .three{
+            flex: 1;
+            order: 3;
+        }
+        .container-4 .one{
+            flex: 1;
+            order: 1;
+        }
+        .container-4 .two{
+            flex: 2;
+            order: 2;
+            background-color: #999;
+        }
+        .container-4 .three{
+            flex: 1;
+            order: 3;
+            
         }
     </style>
     </head>
@@ -41,6 +94,29 @@
     <div class="container">
         <div class="box box-1"><h1>box-1</h1><p>We Create Market Leading Digital Products, Platforms & Experiences that Transform Businesses</p></div>
         <div class="box box-2"> <h1>box-2</h1><p>We Create Market Leading Digital Products, Platforms</p></div>
-        <div class="box box-3"> <h1>box-3</h1><p>We Create Market Leading Digital Products, Platforms & Experiences that Transform Businesses</p></div></div>
+        <div class="box box-3"> <h1>box-3</h1><p>We Create Market Leading Digital Products, Platforms & Experiences that Transform Businesses</p></div>
+    </div>
+    <!-- opening of flex-container container-2 -->
+    <div class="container-2">
+        <div class="box one"><h1>One</h1></div><!-- flex item order 1 flex 1 -->
+        <div class="box two"><h1>Two</h1></div><!-- flex item order 2 flex 1 -->
+        <div class="box three"><h1>Three</h1></div><!-- flex item order 3 flex 1 -->
+    </div>
+    <!-- closing of flex-container container-2 -->
+    <!-- opening of flex-container container-3 -->
+    <div class="container-3">
+    <div class="box one"><h1>Order 2 flex 1</h1></div><!-- flex item order 2 flex 1 -->
+    <div class="box two"><h1>Order 1 flex 1</h1></div><!-- flex item order 1 flex 1 -->
+    <div class="box three"><h1>Order 3 flex 1</h1></div><!-- flex item order 3 flex 1 -->
+    </div>
+    <!-- closing of flex-container cotainer-3 -->
+    <!-- openning of flex-container container-4 -->
+    <div class="container-4">
+        <div class="one"><h1>Order 1 flex 1</h1></div>
+        <div class="two"><h1>Order 2 flex 2</h1></div>
+        <div class="three"><h1>Order 3 flex 1</h1></div>
+    </div>
+    <!-- closing of flex container container -4 -->
+    
 </body>
 </html>
