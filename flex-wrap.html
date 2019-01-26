@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Flex Wrap property in flexbox
+</title>
+<style type="text/css">
+    body{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .container-one,.container-two,.container-three{
+        background-color: #e3e3e3;
+        display: flex;
+        align-items: center;
+        margin: 30px 0px;
+        
+    }
+    .container-two{
+    flex-wrap: wrap;
+    }
+    .container-three{
+        flex-wrap: wrap-reverse;
+    }
+    .container-one .box,.container-two .box,.container-three .box{
+        min-width: 200px;
+        flex-grow: 1;
+    }  
+    .one{
+        background-color: #ebebeb;
+    }
+    .two{
+        background-color: #d1d1d1;
+    }
+    .three{
+        background-color: #ebebeb;
+    }
+</style>
+</head>
+<body>
+    <!-- container without flex wrap -->
+<div class="container-one">
+<div class="box one">
+<h1>One</h1>
+</div>
+<div class="box two">
+<h1>Two</h1>
+</div>
+<div class="box three">
+<h1>Three</h1>
+</div>
+</div>
+    <!-- container with flex wrap -->
+    <div class="container-two">
+<div class="box one">
+<h1>One</h1>
+</div>
+<div class="box two">
+<h1>Two</h1>
+</div>
+<div class="box three">
+<h1>Three</h1>
+</div>
+</div>
+    
+    <!-- container with flex wrap reverse -->
+<div class="container-three">
+<div class="box one">
+<h1>One</h1>
+</div>
+<div class="box two">
+<h1>Two</h1>
+</div>
+<div class="box three">
+<h1>Three</h1>
+</div>
+</div>
+    
+    </body></html>
